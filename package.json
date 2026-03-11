@@ -1,0 +1,11 @@
+{
+  "name": "asf-vendor-listings",
+  "version": "1.0.0",
+  "description": "Static vendor listing generator for Alabama Strawberry Festival — pulls from Airtable, outputs index.html",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
