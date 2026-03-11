@@ -107,10 +107,15 @@ function buildHTML(map, cats) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vendors — Alabama Strawberry Festival 2026</title>
 <meta name="description" content="Browse all vendors at the Alabama Strawberry Festival — artisans, crafters, food, and more at Depot Park, Cullman, AL on April 24 & 25, 2026.">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
+  @font-face {
+    font-family: 'BastedClubs';
+    src: url('https://irp.cdn-website.com/caf6e8c2/fonts/BastedClubs-Bold-b47c_400.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
   :root {
-    --bg:        #c8bfaf;
     --divider:   #a89880;
     --red:       #c93b1a;
     --red-dark:  #9e2d12;
@@ -118,10 +123,11 @@ function buildHTML(map, cats) {
     --text-muted:#5a4a3e;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    background: var(--bg);
-    font-family: 'Source Sans 3', sans-serif;
+  html, body {
+    background: transparent;
+    font-family: 'Barlow', sans-serif;
     color: var(--text);
+    overflow: hidden;
   }
 
   /* jump nav */
@@ -136,6 +142,7 @@ function buildHTML(map, cats) {
     color: var(--text-muted);
     margin-bottom: 14px;
     font-weight: 600;
+    font-family: 'Barlow', sans-serif;
   }
   .jump-buttons {
     display: flex;
@@ -150,7 +157,7 @@ function buildHTML(map, cats) {
     border-radius: 3px;
     background: transparent;
     color: var(--red-dark);
-    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Barlow', sans-serif;
     font-size: 11px;
     font-weight: 700;
     letter-spacing: .1em;
@@ -164,7 +171,7 @@ function buildHTML(map, cats) {
   /* sections */
   .vendor-section { padding: 36px 24px 12px; }
   .category-header {
-    font-family: 'Playfair Display', serif;
+    font-family: 'BastedClubs', serif;
     font-size: 34px;
     color: var(--red);
     text-transform: uppercase;
@@ -186,6 +193,7 @@ function buildHTML(map, cats) {
     border-bottom: 1px solid var(--divider);
   }
   .vendor-name {
+    font-family: 'Barlow', sans-serif;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: .04em;
@@ -194,7 +202,9 @@ function buildHTML(map, cats) {
     margin-bottom: 5px;
   }
   .vendor-desc {
+    font-family: 'Barlow', sans-serif;
     font-size: 16px;
+    font-weight: 400;
     color: var(--text-muted);
     line-height: 1.5;
   }
@@ -206,6 +216,7 @@ function buildHTML(map, cats) {
     font-size: 12px;
     color: var(--text-muted);
     letter-spacing: .05em;
+    font-family: 'Barlow', sans-serif;
   }
 
   @media (max-width: 600px) {
@@ -227,6 +238,18 @@ function buildHTML(map, cats) {
 ${sections}
 
 <p class="updated-note">Last updated: ${now}</p>
+
+<script>
+  // Sends the page full height to parent so the Duda iframe auto-resizes
+  function sendHeight() {
+    const h = document.body.scrollHeight;
+    window.parent.postMessage({ iframeHeight: h }, '*');
+  }
+  window.addEventListener('load', sendHeight);
+  window.addEventListener('resize', sendHeight);
+  setTimeout(sendHeight, 500);
+  setTimeout(sendHeight, 1500);
+</script>
 
 </body>
 </html>`;
