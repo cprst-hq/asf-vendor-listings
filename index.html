@@ -4,12 +4,581 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vendors — Alabama Strawberry Festival 2026</title>
+<meta name="description" content="Browse all vendors at the Alabama Strawberry Festival — artisans, crafters, food, and more at Depot Park, Cullman, AL on April 24 & 25, 2026.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  body { background: #c8bfaf; font-family: sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
-  p { color: #5a4a3e; font-size: 15px; }
+  :root {
+    --bg:        #c8bfaf;
+    --divider:   #a89880;
+    --red:       #c93b1a;
+    --red-dark:  #9e2d12;
+    --text:      #2a1f18;
+    --text-muted:#5a4a3e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    font-family: 'Source Sans 3', sans-serif;
+    color: var(--text);
+  }
+
+  /* jump nav */
+  .jump-nav {
+    padding: 28px 24px 12px;
+    text-align: center;
+  }
+  .jump-nav p {
+    font-size: 11px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+    font-weight: 600;
+  }
+  .jump-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+  .jump-btn {
+    display: inline-block;
+    padding: 7px 16px;
+    border: 2px solid var(--red);
+    border-radius: 3px;
+    background: transparent;
+    color: var(--red-dark);
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .18s, color .18s;
+  }
+  .jump-btn:hover { background: var(--red); color: #fff; border-color: var(--red); }
+  .nav-divider { height: 1px; background: var(--divider); margin: 20px 24px 0; }
+
+  /* sections */
+  .vendor-section { padding: 36px 24px 12px; }
+  .category-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    color: var(--red);
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--divider);
+    margin-bottom: 20px;
+    scroll-margin-top: 20px;
+  }
+
+  /* vendor grid */
+  .vendor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0;
+  }
+  .vendor-card {
+    padding: 16px 16px 16px 0;
+    border-bottom: 1px solid var(--divider);
+  }
+  .vendor-name {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: var(--text);
+    margin-bottom: 5px;
+  }
+  .vendor-desc {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  /* footer note */
+  .updated-note {
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: .05em;
+  }
+
+  @media (max-width: 600px) {
+    .vendor-grid { grid-template-columns: 1fr; }
+    .category-header { font-size: 26px; }
+  }
 </style>
 </head>
 <body>
-  <p>Vendor listings coming soon.</p>
+
+<div class="jump-nav">
+  <p>Jump to a category</p>
+  <div class="jump-buttons">
+    <a class="jump-btn" href="#art">Art</a>
+        <a class="jump-btn" href="#bath-and-body">Bath and Body</a>
+        <a class="jump-btn" href="#books">Books</a>
+        <a class="jump-btn" href="#boutique-clothing">Boutique Clothing</a>
+        <a class="jump-btn" href="#candles">Candles</a>
+        <a class="jump-btn" href="#ceramics-pottery">Ceramics/Pottery</a>
+        <a class="jump-btn" href="#children-s-clothes">Children's Clothes</a>
+        <a class="jump-btn" href="#children-s-toys">Children's Toys</a>
+        <a class="jump-btn" href="#crochet">Crochet</a>
+        <a class="jump-btn" href="#food">Food</a>
+        <a class="jump-btn" href="#glass">Glass</a>
+        <a class="jump-btn" href="#hats">Hats</a>
+        <a class="jump-btn" href="#home-decor">Home Decor</a>
+        <a class="jump-btn" href="#jewelry">Jewelry</a>
+        <a class="jump-btn" href="#leather">Leather</a>
+        <a class="jump-btn" href="#other">Other</a>
+        <a class="jump-btn" href="#pet-items">Pet Items</a>
+        <a class="jump-btn" href="#pre-packed-food">Pre-Packed Food</a>
+        <a class="jump-btn" href="#vinyl-heat-press-shirts-or-items">Vinyl/Heat Press Shirts or items</a>
+        <a class="jump-btn" href="#wood-working">Wood Working</a>
+  </div>
+</div>
+<div class="nav-divider"></div>
+
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="art">Art</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">KMA Studio LLC</div>
+            <div class="vendor-desc">Playful creations with bookmaking, printmaking, drawing, woodwork &amp; pyrography fun!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="bath-and-body">Bath and Body</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">Magnolia soap and Bath</div>
+            <div class="vendor-desc">Plant powered goodies for your home and body; freshness in every bar!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Sherapy Sugar Therapy</div>
+            <div class="vendor-desc">Self-care products made with custom recipes, treat yourself!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="books">Books</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">Allie's Inkwell</div>
+            <div class="vendor-desc">Children’s books, hand drawn, original stories for young minds!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Halcie Dawn Romance Novels</div>
+            <div class="vendor-desc">Six romance novels, love and suspense on every page!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="boutique-clothing">Boutique Clothing</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">Lux Creek</div>
+            <div class="vendor-desc">Local Alabama outdoor apparel brand celebrating adventure and outdoor lifestyle.</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Magnolia &amp; June</div>
+            <div class="vendor-desc">Prints, embroidery, and boutique clothes, crafted with flair!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Southern Native</div>
+            <div class="vendor-desc">Hand designed, hand screen printed apparel and various goods.</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Taylormade</div>
+            <div class="vendor-desc">Women’s &amp; children’s clothing boutique. Trendy &amp; affordable clothing for women &amp; children!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">The Leopard Lilly Boutique</div>
+            <div class="vendor-desc">Family boutique; fashion for women, men, and kids!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="candles">Candles</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">Miller Farm Candle Co</div>
+            <div class="vendor-desc">Candles, goat milk soap, and more, elevate your home and body!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="ceramics-pottery">Ceramics/Pottery</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">Lil Bear Pottery &amp; Gift Shop</div>
+            <div class="vendor-desc">Pottery, Aggravation/other game boards, wood signs, soaps, candles, Amish Country Popcorn, coasters.</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Plottware Pottery</div>
+            <div class="vendor-desc">Colonial stoneware, marbled blue and white, pottery with heritage!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Prodigal Pottery</div>
+            <div class="vendor-desc">Handmade pottery by women overcoming adversity; art with a story!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="children-s-clothes">Children's Clothes</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">Wren + Revel</div>
+            <div class="vendor-desc">Youth boutique, toys, and a trucker hat bar, fun for tweens!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="children-s-toys">Children's Toys</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">Light us up</div>
+            <div class="vendor-desc">Light up balloons and bubble toys; glow and play on the spot!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">RZB 3D Printing</div>
+            <div class="vendor-desc">3D printed toys and fidgets, new fun every year!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Stidham Farms Danke Dips</div>
+            <div class="vendor-desc">Stuff your own “Berry” Best friend, festival fun for all!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="crochet">Crochet</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">Crafty Bama</div>
+            <div class="vendor-desc">Crochet plushies, halter tops, and cute knit gnomes!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Nancy Crochet Flowers</div>
+            <div class="vendor-desc">Crocheted flowers and jewelry; tiny art, big smiles!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="food">Food</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">BG's Mini Donuts</div>
+            <div class="vendor-desc">Warm mini donuts dusted in sweet toppings, little bites of happiness!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Bleu Basil Artisan Pasta</div>
+            <div class="vendor-desc">Handcrafted ravioli with bold flavors, from savory herbs to sweet strawberry!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Boho Tea Bar</div>
+            <div class="vendor-desc">Berry sweet teas, boba drinks, acai bowls &amp; tasty treats to sip and smile!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Cool Shavings</div>
+            <div class="vendor-desc">Cool, fluffy shaved ice with sweet strawberry flavors and fun toppings to chill out!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">D’s crazy dogs</div>
+            <div class="vendor-desc">Wild corn dogs, cheesy bites, and crazy-loaded fries, festival food fun on a stick!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Devil Dawgs</div>
+            <div class="vendor-desc">Juicy burgers, loaded fries, funnel cakes &amp; strawberry sweets for tasty fun!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Hele Bowls</div>
+            <div class="vendor-desc">Fresh island bowls, juicy strawberries &amp; tropical flavors in every happy bite!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Holderbeans Coffee</div>
+            <div class="vendor-desc">Berry sweet sips, dreamy frappes &amp; strawberry refreshers to cool your day!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">JJ’s West Coast Tacos</div>
+            <div class="vendor-desc">Tasty tacos, burritos, nachos &amp; sweet strawberry churros for tasty fun!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">K’s botanas&amp;more</div>
+            <div class="vendor-desc">Sweet strawberries, creamy treats &amp; street corn goodness in every bite!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Karma's Coffee House</div>
+            <div class="vendor-desc">Sweet strawberry treats, dreamy drinks, and berry fun in every delicious sip!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Kona Ice</div>
+            <div class="vendor-desc">Cool Kona ice, fruity smoothies &amp; colorful flavors to chill your day!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Local Eats (Schatzi's)</div>
+            <div class="vendor-desc">Crispy chicken, juicy smash burgers, and sweet lemonades to sip &amp; savor!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Puckett's Restaurant</div>
+            <div class="vendor-desc">Sweet strawberry BBQ, cheesy mac, and cobbler treats for a berry tasty day!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Sauced</div>
+            <div class="vendor-desc">Sweet strawberry cheesecake treats and saucy wings bringing berry bold flavor!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Scooty's Apples</div>
+            <div class="vendor-desc">Sweet strawberry treats, candy apples, and creamy cups bursting with fruity fun!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Seven Daughters Scoops</div>
+            <div class="vendor-desc">Sweet strawberry treats, nachos, cheesecake &amp; brownies for berry happy smiles!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Slim Chcikens</div>
+            <div class="vendor-desc">Crispy chicken, loaded fries, sweet strawberries &amp; waffle treats, festival bites!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">The Butcher's Chuckwagon</div>
+            <div class="vendor-desc">Smoky BBQ, crispy fries &amp; sweet strawberry treats for festival fun all day today!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">The Mad Greek</div>
+            <div class="vendor-desc">Fresh gyros, Greek bowls &amp; sweet baklava bringing sunny Mediterranean bites!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Warehouse Nutrition</div>
+            <div class="vendor-desc">Bright loaded teas, fruity acai bowls &amp; sweet strawberry treats to refresh you!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="glass">Glass</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">Theresa's Stained Glass</div>
+            <div class="vendor-desc">Stained glass art, let the light bring joy to your space!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="hats">Hats</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">Sevini Boutique</div>
+            <div class="vendor-desc">Handmade hats, pyrography, paint, flowers, and feathers!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="home-decor">Home Decor</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">Nerdy Girl</div>
+            <div class="vendor-desc">Fun finds for book lovers and dreamers; veteran/women owned magic!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Oxcart Dreams</div>
+            <div class="vendor-desc">Copper and steel art, make your own home and garden treasures!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="jewelry">Jewelry</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">Designsbyggdecatur</div>
+            <div class="vendor-desc">Unique jewelry crafted from old and new; wear a story!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Heathers Customized Permanent Jewelry</div>
+            <div class="vendor-desc">Permanent jewelry, gold and silver chains welded on as bracelets, anklets necklaces or rings</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Mark Alexander Clay Co</div>
+            <div class="vendor-desc">Colorful clay earrings and accessories; wear your art!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Origami Owl</div>
+            <div class="vendor-desc">Customizable glass lockets with over 500 different kinds of charms to tell your unique story.</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Southern clay by Ejide</div>
+            <div class="vendor-desc">&quot;Through the intricate craft of polymer clay jewelry making, I sculpt wearable art pieces. Beginning</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="leather">Leather</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">Gathering Moss</div>
+            <div class="vendor-desc">Hand-stitched leather goods crafted with care, tradition, and timeless style!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">J&amp;M Products</div>
+            <div class="vendor-desc">Leather belts, wallets, and purses, crafted to last!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="other">Other</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">J &amp; C Local Farms</div>
+            <div class="vendor-desc">Lavender farm goodies, culinary and body treats from local fields!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">J &amp; I Tree Nursery</div>
+            <div class="vendor-desc">Fruit, shade and flowering trees and plants. Locally grown.</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Nikita Braids</div>
+            <div class="vendor-desc">Colorful braids, tinsel, and hair ties; brighten your style!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Simply Lit Fire Pots</div>
+            <div class="vendor-desc">Handmade fire pots, light up your space with Cullman pride!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Thrasher</div>
+            <div class="vendor-desc">Hand painted earrings, charms, and more; laser cut style for all!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="pet-items">Pet Items</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">Blind Dog Biscuit</div>
+            <div class="vendor-desc">Organic dog and cat treats, bandannas, collars, and more!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">The Southern</div>
+            <div class="vendor-desc">Pet bandanas, bow ties, and engraved cups—pawsitively cute!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="pre-packed-food">Pre-Packed Food</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">Blue Hound Brands</div>
+            <div class="vendor-desc">Organic milk lattes, Blue Hound Brew brings clean-label goodness!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Brickyard Meats Processing</div>
+            <div class="vendor-desc">Handmade jerky, summer sausage and snack sticks. Made here in Cullman. Alabama made products</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Country Sweets</div>
+            <div class="vendor-desc">Farm honey, jams, and jellies, sweetness from our family to yours!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Cullman Bakery Inc</div>
+            <div class="vendor-desc">Scratch-made pastries, classic baking, prepacked for you!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Dixie Gourmet</div>
+            <div class="vendor-desc">Dip and soup mixes; just add fun!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Philip &amp; Christel’s</div>
+            <div class="vendor-desc">Bakery delights, bread, cinnamon rolls, scones, and sweet treats!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Pirate's Pickles, LLC</div>
+            <div class="vendor-desc">Sweet and spicy dill pickles of the pirate variety.</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Simply Infused Olive Oil Shop</div>
+            <div class="vendor-desc">Worldly olive oils and Italian balsamics; taste the adventure!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Sweet T's Treats</div>
+            <div class="vendor-desc">Freeze dried candy galore; sweetness with a crunch!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Sweets by Sav</div>
+            <div class="vendor-desc">Sweet, fun cake pops made to brighten your day!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">The Mason Jar</div>
+            <div class="vendor-desc">I handmake jams, pepper jellies, pickles, pickled veggies, etc., using fresh, local ingredients.</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Two L's Creations, LLC</div>
+            <div class="vendor-desc">Freeze dried treats; candy, fruit, and ice cream with a crunch!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Wildflower Fudge</div>
+            <div class="vendor-desc">I make 35 flavors of fudge with 6 or more being strawberry flavored fudges.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="vinyl-heat-press-shirts-or-items">Vinyl/Heat Press Shirts or items</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">Monograms Plus</div>
+            <div class="vendor-desc">Festival souvenirs, fun for kids, and strawberry smiles!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Nomadic Threads</div>
+            <div class="vendor-desc">Event merch with local flair, creativity on every shirt!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">PlumCotton Apparel Co.</div>
+            <div class="vendor-desc">Custom clothing for all; styles for every vibe!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">R.E. Garrison Trucking/ Garrison &amp; Co.</div>
+            <div class="vendor-desc">Original designs; screen printed and embroidered with flair!</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="vendor-section">
+        <h2 class="category-header" id="wood-working">Wood Working</h2>
+        <div class="vendor-grid">
+          <div class="vendor-card">
+            <div class="vendor-name">Bearclawwoodfixins</div>
+            <div class="vendor-desc">Scroll saw puzzles, leash and key holders, crafted from poplar!</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">Southern Wood Crafts</div>
+            <div class="vendor-desc">I create home decor, cutting and charcuterie boards using hand picked domestic and exotic woods</div>
+          </div>
+          <div class="vendor-card">
+            <div class="vendor-name">The Southern Maple</div>
+            <div class="vendor-desc">I make my wood geometric backers and carved wood signs by using standard woodworking tools.</div>
+          </div>
+        </div>
+      </div>
+
+<p class="updated-note">Last updated: March 11, 2026</p>
+
 </body>
 </html>
