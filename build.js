@@ -240,15 +240,29 @@ ${sections}
 <p class="updated-note">Last updated: ${now}</p>
 
 <script>
-  // Sends the page full height to parent so the Duda iframe auto-resizes
+  // ── Height reporting ──────────────────────────────────────────────────────
   function sendHeight() {
-    const h = document.body.scrollHeight;
-    window.parent.postMessage({ iframeHeight: h }, '*');
+    window.parent.postMessage({ iframeHeight: document.body.scrollHeight }, '*');
   }
   window.addEventListener('load', sendHeight);
   window.addEventListener('resize', sendHeight);
   setTimeout(sendHeight, 500);
   setTimeout(sendHeight, 1500);
+
+  // ── Jump button scroll ────────────────────────────────────────────────────
+  // Since the iframe is full height and scrolling happens on the parent Duda
+  // page, we intercept anchor clicks and tell the parent where to scroll.
+  document.querySelectorAll('.jump-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var targetId = btn.getAttribute('href').replace('#', '');
+      var el = document.getElementById(targetId);
+      if (el) {
+        // offsetTop of the section within the iframe
+        window.parent.postMessage({ iframeScrollTo: el.offsetTop }, '*');
+      }
+    });
+  });
 </script>
 
 </body>
